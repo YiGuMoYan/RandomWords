@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="icon">
+        <file>LD.jpg</file>
+    </qresource>
+    <qresource prefix="image">
+        <file>Button.png</file>
+    </qresource>
+</RCC>

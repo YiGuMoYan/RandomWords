@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>welcomeForm</class>
+ <widget class="QWidget" name="welcomeForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::ActionsContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>成语竞猜</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Image/Image.qrc">
+    <normaloff>:/icon/LD.jpg</normaloff>:/icon/LD.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	border-radius:20px;
+	border-width: 5px;
+}</string>
+  </property>
+  <widget class="QLabel" name="Words">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>800</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>100</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>成语竞猜</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>300</y>
+     <width>300</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover
+{
+
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.493818, fy:0.511, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(221, 255, 253, 255))
+}
+QPushButton
+{
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.494, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(223, 223, 223, 255));
+	border-width: 5px;
+border-style :ridge;
+}</string>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>300</width>
+     <height>71</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="config">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>410</y>
+     <width>300</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover
+{
+
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.493818, fy:0.511, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(221, 255, 253, 255))
+}
+QPushButton
+{
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.494, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(223, 223, 223, 255));
+border-style :ridge;
+}</string>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="about">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>540</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover
+{
+
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.493818, fy:0.511, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(221, 255, 253, 255))
+}
+QPushButton
+{
+	background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.494, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(223, 223, 223, 255));
+border-style :ridge;
+}</string>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Image/Image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
